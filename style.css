@@ -22,6 +22,12 @@ body{
   background-color: #fff;
 }
 
+h1{
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--black);
+}
+
 h2{
   font-size: 1.4rem;
   font-weight: 600;
@@ -176,10 +182,17 @@ section .hero-image img:nth-child(1){
 
 section .company-logo{
   width: 70%;
-  margin: 1rem auto;
+  margin: 2rem auto;
   border-radius: 8px;
   height: 8rem;
   background-color: transparent;
+  padding: 3rem;
+}
+
+section .company-logo img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 section .about{
@@ -197,7 +210,7 @@ section .about-content{
 
 section .features-container{
   width: 80%;
-  margin:1rem auto;
+  margin:2rem auto 3rem;
   padding: 3rem;
   background-color: var(--secondary);
   border-radius: 8px;
@@ -236,4 +249,25 @@ section .features-container .features-item .text h2{
 section .features-container .features-item .text p{
   color: var(--grey);
   font-weight: 500;
+}
+
+/* about */
+
+section .about-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3rem;
+  border: 1px solid var(--secondary);
+  padding: 1rem 5rem;
+}
+
+section .about-container .about-img{
+  width: 50%;
+  height: 100%;
+}
+
+section .about-container .about-text{
+  width: 50%;
+  padding: 3rem;
 }
